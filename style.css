@@ -5,7 +5,15 @@ body {
     background-size: cover;
 }
 
-.imge__logo {
+nav {
+    display: flex;
+    position: fixed;
+    margin:-100px;
+    margin-left:0px;
+
+}
+
+.navbar__image-logo {
     width: 80px;
     text-align: center;
     justify-content: center;
@@ -13,16 +21,22 @@ body {
     padding: 0;
 }
 
-.nav {
-    color: #111;
+.navbar__list {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(87, 235, 119);
+    text-decoration: none;
+    height: 3rem;
 }
 
 @media only screen and (max-width:600px) {
-    .main-nav {
+    .navbar__list{
         font-size: .4em;
         padding:0;
     } 
-    .header_image__cover {
+    .header__image-cover {
         block-size: 23vh;
         
     }
@@ -31,27 +45,7 @@ body {
     } 
 }
 
-.nav__bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: fixed;
-    
-}
-
-.nav__bar__list {
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-    overflow: hidden;
-    background: rgb(87, 235, 119);
-    text-decoration: none;
-    height: 3rem;
-  
-}
-
-.nav__item {
+.navbar__item {
     display: block;
     color: white;
     text-align: center;
@@ -59,33 +53,33 @@ body {
     text-decoration: none;
 }
 
-.nav__item:hover {
+.navbar__item:hover {
     background-color: rgb(121, 233, 253);
     text-decoration: none;
 }
 
-.nav__item--right {
+.navbar__item--right {
     float: right;
     color: white;
 }
  
-.nav__item--left {
+.navbar__item--left {
     float: left;
     color: white;
 }    
 
-.header__text__box {
+.header {
     text-align: center;
     margin-top: 100px;
 }
 
-.header__primary {
+.header__title {
     font-size: 5rem;
     margin-top: 1rem;
     text-shadow: 10px 7px 10px white;
 }
 
-.header__image__box {
+.header__image-box {
     display: flex;
     margin-left: 20%; 
     margin-top: 3%;
@@ -102,16 +96,13 @@ body {
     border: gray solid;
 }
 
-.header_image__cover {  
+.header__image-cover {  
     border: .5% gray;
     border-radius: 50px;
     margin: 3%;
 }
 
-button {
-    margin: 0;
-}
-.container {
+.menu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -119,7 +110,7 @@ button {
     margin-top: 4rem;
 }
 
-.container__image {    
+.menu__image {    
     border: .5px gray;
     border-radius: 50px;
     height: 300px;
@@ -127,7 +118,7 @@ button {
     margin: 35px;
     box-shadow: 10px 10px 4px rgba(101, 110, 78, 0.616)
 }
-.container__image:hover {
+.menu__image:hover {
     transition: all .3s;
     transform: scale(1.1);
     box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.753)
