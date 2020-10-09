@@ -6,11 +6,9 @@ body {
 }
 
 nav {
-    display: flex;
     position: fixed;
-    margin:-100px;
-    margin-left:0px;
-
+    top: 0;
+    width: 100%;
 }
 
 .navbar__image-logo {
