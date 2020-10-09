@@ -109,7 +109,7 @@ nav {
 }
 
 .menu__image {    
-    border: .5px gray;
+    border: .5px rgb(116, 114, 114);
     border-radius: 50px;
     height: 300px;
     width: 300px;
@@ -133,4 +133,4 @@ nav {
     font-size: 15px;
     color: white;
 }
-
+ 
